@@ -5,5 +5,15 @@ export const isSubmitable = (target) => {
 };
 
 export const isValidEmailAddress = (email) => {
-    return email.includes('@') && email.includes('.co')
+    if (!email || !email.includes('@')) return false;
+
+    const fullEmailAddress = email.split('@');
+    if (fullEmailAddress.length > 2) return false;
+
+    const domain = fullEmailAddress[1];
+    if (!domain.includes('.')) return false;
+
+    const provider = domain.split('.');
+
+    return provider[0] !== ''
 };
