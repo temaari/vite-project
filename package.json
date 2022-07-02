@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "test": "jest --watch --verbose",
+    "test": "jest --watch --verbose --coverage",
     "build": "vite build",
     "preview": "vite preview"
   },
