@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "test": "jest --watch --verbose --coverage",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --coverage"
   },
   "devDependencies": {
-    "@types/jest": "^28.1.4",
-    "jest": "^28.1.2",
-    "vite": "^2.9.9"
+    "c8": "^7.11.3",
+    "vite": "^2.9.9",
+    "vitest": "^0.16.0"
   }
 }
